@@ -7,13 +7,13 @@
 }
 
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
     color: black;
     background-color: white;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
