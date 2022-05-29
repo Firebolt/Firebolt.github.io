@@ -1,0 +1,83 @@
+* {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    --main-width: calc(100vw - 75px);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    color: black;
+    background-color: white;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1e0536;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #62368b;
+}
+
+main {
+    background: url(./blurry-gradient-haikei.svg);
+    height: 100vh;
+    width: var(--main-width);
+    background-size: cover;
+    margin-left: 75px;
+    display: grid;
+    grid-template-columns: calc(var(--main-width)/8) auto calc(var(--main-width)/8);
+    grid-template-rows: calc(var(--main-width)/12) auto calc(var(--main-width)/12);
+}
+
+main div { 
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text], input[type=email], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px; 
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #e7ed50;
+    color: #000000;
+}
