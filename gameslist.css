@@ -31,17 +31,9 @@ body::-webkit-scrollbar-thumb {
 
 main {
     width: var(--main-width);
-    padding-left: var(--gap-x);
-    padding-top: var(--gap-y);
     background-image: url(stacked-steps-haikei.svg);
     background-size: cover;
-    height: 100vh;
-    margin-left: 75px;
     display: grid;
-    grid-template-columns: calc(var(--main-width)/3) calc(var(--main-width)/3);
-    grid-template-rows: calc(3*100vh/7) calc(3*100vh/7);
-    column-gap: var(--gap-x);
-    row-gap: var(--gap-y);
 }
 
 .game {
@@ -84,4 +76,25 @@ a:link, a:hover, a:visited, a:active {
 .wip {
     color: red;
     font-size: 5em;
+}
+
+@media only screen and (min-width:600px) {
+    main {
+        height: 100vh;
+        column-gap: var(--gap-x);
+        row-gap: var(--gap-y);
+        grid-template-columns: calc(var(--main-width)/3) calc(var(--main-width)/3);
+        grid-template-rows: calc(3*100vh/7) calc(3*100vh/7);
+        margin-left: 75px;
+        padding-left: var(--gap-x);
+        padding-top: var(--gap-y);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    main {
+        height: calc(100vh - 5rem);
+        grid-template-columns: calc(100vw/2) calc(100vw/2);
+        grid-template-rows: calc(50vh - 5rem/2) calc(50vh - 5rem/2);
+    }
 }
