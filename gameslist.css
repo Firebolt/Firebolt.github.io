@@ -80,7 +80,8 @@ a:link, a:hover, a:visited, a:active {
 
 @media only screen and (min-width:600px) {
     main {
-        height: 100%;
+        min-height: 100vh;
+        max-height: fit-content;
         column-gap: var(--gap-x);
         row-gap: var(--gap-y);
         grid-template-columns: calc(var(--main-width)/3) calc(var(--main-width)/3);

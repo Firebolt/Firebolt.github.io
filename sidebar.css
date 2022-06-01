@@ -77,7 +77,7 @@ li svg {
     fill: var(--svg-color);
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:900px) {
     .navbar {
         bottom: 0;
         width: 100vw;
@@ -99,10 +99,13 @@ li svg {
     main {
         width: 100vw;
         margin: 0;
+        min-height: 100vh;
+        max-height: fit-content;
+        margin-bottom: 5rem;
     }
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:900px) {
     .navbar {
         top: 0;
         width: 75px;
@@ -116,5 +119,4 @@ li svg {
     .navbar:hover .linkText {
         display: inline;
     }
-    
 }
