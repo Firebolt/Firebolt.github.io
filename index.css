@@ -7,13 +7,13 @@
 }
 
 html {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body {
     color: black;
     background-color: white;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 
 main {
     background: url(./low-poly-grid-haikei.svg);
-    height: 100vh;
+    height: 100%;
     width: var(--main-width);
     background-size: cover;
     margin-left: 75px;
