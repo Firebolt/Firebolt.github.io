@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 
 main {
     background: url(./blurry-gradient-haikei.svg);
-    height: 100vh;
+    height: 100%;
     width: var(--main-width);
     background-size: cover;
     margin-left: 75px;
